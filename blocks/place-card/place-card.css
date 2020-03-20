@@ -1,0 +1,50 @@
+@import url(./__image/place-card__image.css);
+@import url(./__image/_city/_karachaevsk/place-card__image_city_karachaevsk.css);
+@import url(./__delete-icon/place-card__delete-icon.css);
+@import url(./__description/place-card__description.css);
+@import url(./__name/place-card__name.css);
+@import url(./__like-container/place-card__like-container.css);
+
+.place-card {
+  width: 282px;
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 360px;
+}
+
+.zoom-card__container {
+    box-sizing: content-box;
+        position: fixed;
+}
+
+.zoom-card__image {
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: auto;
+
+}
+
+.zoom-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.zoom-card.zoom-card_is-opened {
+    display: flex;
+}
+
+.zoom-card__close {
+  width: 26px;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  cursor: pointer;
+}

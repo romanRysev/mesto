@@ -1,0 +1,10 @@
+.user-info__edit-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    width: 38px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+}
