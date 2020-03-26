@@ -1,4 +1,4 @@
-class UserInfo {
+export class UserInfo {
   constructor() {
     this.UserProfileAvatar = document.querySelector('.user-info__photo');
     this.nameProfileElement = document.querySelector('.user-info__name');

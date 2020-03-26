@@ -1,3 +1,10 @@
+import "../pages/index.css";
+import {UserInfo} from './UserInfo.js'
+import {Popup} from './Popup.js'
+import {FormValidator} from './FormValidator.js'
+import {CardList} from './CardList.js'
+import {Card} from './Card.js'
+import {Api} from './Api.js'
 (function () {
 
   const placesList = document.querySelector('.places-list');

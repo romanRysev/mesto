@@ -4,7 +4,7 @@
 // Но при этом CardList отрисовывает (добавляет непосредственно в DOM) элементы карточек,
 // слушает события
 
-class CardList {
+export class CardList {
   constructor(tagretElement, cardInstance, api) {
     this.element = tagretElement;
     this.cardInstance = cardInstance;
