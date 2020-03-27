@@ -4,10 +4,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Подклю
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 const isDev = process.env.NODE_ENV === 'development';
-new webpack.DefinePlugin({
-    'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-})
 
 module.exports = {
     entry: { main: './src/scripts/script.js' },
@@ -59,6 +57,9 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
         }),
-    new WebpackMd5Hash()
+    new WebpackMd5Hash(),
+    new webpack.DefinePlugin({
+    'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    })
     ]
 };
